@@ -18,6 +18,7 @@
         android:ems="10"
         android:hint="Nama Mahasiswa"
         android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -57,9 +58,10 @@
         app:layout_constraintTop_toBottomOf="@+id/nim" />
 
     <RadioGroup
-        android:id="@+id/RGroup"
-        android:layout_width="299dp"
-        android:layout_height="75dp"
+        android:id="@+id/jenis_kelamin"
+        android:layout_width="317dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,20 +69,19 @@
 
         <RadioButton
             android:id="@+id/laki"
-            android:layout_width="wrap_content"
+            android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:text="Laki-Laki" />
 
         <RadioButton
             android:id="@+id/perempuan"
-            android:layout_width="wrap_content"
+            android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:text="Perempuan" />
     </RadioGroup>
 
     <Spinner
         android:id="@+id/listJurusan"
-        android:entries="@array/list_jurusan"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -88,9 +89,11 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:entries="@array/list_jurusan"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/jenis_kelamin" />
 
     <Button
         android:id="@+id/btnSimpan"
@@ -98,10 +101,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="SImpan Data"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listJurusan" />
 

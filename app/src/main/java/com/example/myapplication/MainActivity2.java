@@ -28,15 +28,19 @@ public class MainActivity2 extends AppCompatActivity {
             Bundle bundle = getIntent().getExtras();
             tvData1.setText(bundle.getString("data1"));
             tvData2.setText(bundle.getString("data2"));
+            tvData3.setText(bundle.getString("data3"));
+            tvData4.setText(bundle.getString("data4"));
+            tvData5.setText(bundle.getString("data5"));
+
         }else{
             /**
              * Apabila Bundle tidak ada, ambil dari Intent
              */
             tvData1.setText(getIntent().getStringExtra("data1"));
             tvData2.setText(getIntent().getStringExtra("data2"));
-            tvData2.setText(getIntent().getStringExtra("data3"));
-            tvData2.setText(getIntent().getStringExtra("data4"));
-            tvData2.setText(getIntent().getStringExtra("data5"));
+            tvData3.setText(getIntent().getStringExtra("data3"));
+            tvData4.setText(getIntent().getStringExtra("data4"));
+            tvData5.setText(getIntent().getStringExtra("data5"));
         }
     }
 
