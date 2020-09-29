@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="pilih_jurusan">Pilih Jurusan</string>
+    <string name="jurusan">Jurusan</string>
+
+    <string-array name="list_jurusan">
+        <item>Akuntansi</item>
+        <item>Informatika</item>
+        <item>Arsitektur</item>
+    </string-array>
+</resources>
